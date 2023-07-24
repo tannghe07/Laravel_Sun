@@ -45,7 +45,7 @@ class User extends Authenticatable
 
     public function posts()
     {
-        return $this->hasMany('App\Posts');
+        return $this->hasMany(Posts::class);
     }
 
     protected function fullName(): Attribute
